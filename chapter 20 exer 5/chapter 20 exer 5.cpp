@@ -21,7 +21,7 @@ using namespace std;
 int main()
 {
     
-    int $1, $5, $10,PIN,amount,r;
+    int usd1, usd5, usd10,PIN,amount,r;
 
     cout << "Enter a four-digit PIN: " << endl;
     cin >> PIN;
@@ -44,12 +44,12 @@ int main()
         cout << "Enter amount you want to withdraw:";
         cin >> amount;
 
-        $10 = (int)(amount) / 10;
+        usd10 = (int)(amount) / 10;
         r = amount % 10;
-        $5 = (int)(r) / 5;
-        $1 = r % 5;
+        usd5 = (int)(r) / 5;
+        usd1 = r % 5;
 
-        cout << $10 <<"note(s) of $10"<<" "<< $5 << "note(s) of $5"<<" "<< $1 << "note(s) of $1";
+        cout << usd10 <<"note(s) of $10"<<" "<< usd5 << "note(s) of $5"<<" "<< usd1 << "note(s) of $1";
     }
     return 0;
 }
